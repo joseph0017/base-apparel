@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap');
+
+body {
+    background-image: url('./images/bg-pattern-desktop.svg');
+    font-family: 'Josefin Sans', sans-serif;
+}
+.background {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+}
+
+.logo {
+    grid-column: 2/5;
+}
+
+.girl {
+    grid-column: 9/13;
+    height: 100vh;
+    width: 100%;
+}
+
+.heading {
+    position: absolute;
+    margin-top: -551px;
+    margin-left: 96px;
+}
+
+.we {
+    font-size: 5rem;
+    color: hsl(0, 36%, 70%);
+}
+.coming {
+    font-size: 5rem;
+    margin-top: -60px;
+}
+
+.body-text{
+    max-width: 500px;
+    line-height: 30px;
+    color: hsl(0, 36%, 70%);
+}
+
+.email-button {
+    max-width: 209px;
+    padding: 2px 100px;
+    border-radius: 50px 50px 50px 50px;
+    border: 1px solid hsl(0, 36%, 70%);;
+}
+
+.address {
+    margin-left: -58px;
+    opacity: 0.4;
+}
+
+.circle {
+    padding: 33px 30px 20px 65px;
+    border-radius: 50px;
+    position: absolute;
+    margin-top: -105px;
+    margin-left: 376px;
+    background: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.arrow {
+    color: white;
+    position: absolute;
+    margin-top: -96px;
+    margin-left: 416px;
+    font-size: 25px;
+}
+
+input {
+    max-width: 209px;
+    padding: 16px 100px;
+    border-radius: 50px 50px 50px 50px;
+    border: 1px solid hsl(0, 36%, 70%);
+}
+
+.error-message {
+    margin-top: 10PX;
+    margin-left: 30px;
+    display: none;
+    color: red;
+}
+
+.input-error {
+  border: 1px solid red;
+}
+
+
+@media screen and (max-width: 375px) {
+.girl {
+    grid-column: 1/13;
+    height: 50vh;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.heading {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 21px;
+}
+
+.we {
+    font-size: 3rem;
+    margin-left: 54px;
+    color: hsl(0, 36%, 70%);
+}
+.coming {
+    font-size: 3rem;
+    margin-left: 54px;
+    margin-top: -46px;
+}
+
+.body-text{
+    max-width: 500px;
+    line-height: 30px;
+    color: hsl(0, 36%, 70%);
+}
+
+input {
+    max-width: 209px;
+    padding: 16px 54px;
+    border-radius: 50px 50px 50px 50px;
+    border: 1px solid hsl(0, 36%, 70%);
+    margin-bottom: 50px;
+}
+
+.error-message {
+    position: absolute;
+    margin-top: -34px;
+    margin-left: 30px;
+    display: none;
+    color: red;
+}
+
+.circle {
+    padding: 33px 30px 20px 65px;
+    background-color: hsl(0, 36%, 70%);
+    border-radius: 50px;
+    position: absolute;
+    margin-top: 398px;
+    margin-left: 239px;
+    background: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+.arrow {
+    color: white;
+    position: absolute;
+    margin-top: 405px;
+    margin-left: 285px;
+    font-size: 25px;
+}
+
+.address {
+    margin-left: 20px;
+    opacity: 0.4;
+}
+
+}
